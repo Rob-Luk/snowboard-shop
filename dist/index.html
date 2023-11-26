@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>SNB.SHOP</title>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Kdam+Thmor+Pro&family=Raleway:wght@300;400;600&display=swap"
+			rel="stylesheet"
+		/>
+		<script
+			src="https://kit.fontawesome.com/4ac635a877.js"
+			crossorigin="anonymous"
+		></script>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+
+	<body class=" relative h-[3000px]  font-sans">
+		
+		<nav class=" fixed top-0 left-0 h-auto flex justify-start items-center py-2 w-full border-b-2 border-gray-100 z-50">
+
+
+				<div class="logo mx-4 text-4xl flex items-center justify-start w-1/2 ">
+					<a href="#main"><span class="font-sans mx-2 text-gray-100">SNB.SHOP</span></a>
+				</div>
+				
+
+
+				<div class="nav-desktop flex items-center justify-center text-2xl">
+					<a href="#Mens" class="mx-5 hidden min-[846px]:flex text-gray-100 font-medium transition delay-150 duration-300 ease-in-out">Mężczyźni</a>
+					<a href="#Womens"class="mx-5 hidden min-[846px]:flex text-gray-100 font-medium transition delay-150 duration-300 ease-in-out">Kobiety</a>
+					<a href="#Blog"class="mx-5 hidden min-[846px]:flex text-gray-100 font-medium  transition delay-150 duration-300 ease-in-out">Blog</a>
+				</div>
+
+			
+			
+
+			<div class="nav-mobile absolute top-0 left-0 w-full -translate-y-full transition ease-in-out duration-300 delay-500  font-serif h-screen text-4xl backdrop-blur-sm flex flex-col justify-center items-center ">
+				<a href="#Mens" class="nav-item py-2 my-4 transition ease-linear duration-300 hover:text-gray-100">Mężczyźni</a>
+				<a href="#Womens" class="nav-item py-2 my-4 transition ease-linear duration-300 hover:text-gray-100">Kobiety</a>
+				<a href="#Blog" class="nav-item py-2 my-4 transition ease-linear duration-300 hover:text-gray-100">Blog</a>
+				<a href="#School" class="nav-item py-2 my-4 transition ease-linear duration-300 hover:text-gray-100">Nauka</a>
+				<a href="#Contact" class="nav-item py-2 my-4 transition ease-linear duration-300 hover:text-gray-100">Kontakt</a>
+			</div>
+
+			<div class="nav_icons w-1/2 flex items-center justify-end mx-4 min-[846px]:flex">
+				<i class="fa-solid fa-magnifying-glass text-xl mx-2 text-gray-100 hidden min-[846px]:flex"></i>
+				<div class="search-glass text-lg border-none"><input class=" text-center bg-transparent border-hidden hidden min-[906px]:w-44 min-[846px]:flex" type="search" name="search" id="text-search" placeholder="Szukaj" "></div>
+				<button id="favBtnHeart"><i class="fa-regular fa-heart mx-2 text-2xl" style="color: #f3eded"></i></button>		
+				<button class="cartBtn"><i class="fa-solid fa-cart-shopping text-gray-100 text-xl mx-2" ></i></button>
+				<div>
+					<button class="burgerBtn relative w-[40px] h-[40px]  min-[846px]:hidden group">
+						<div class="relative w-[35px] h-[25px] bg-none outline:black flex overflow-hidden items-center justify-center transform transition-all ring-offset-gray-100 hover:ring-black ring-opacity-30 duration-200">
+							<div class="flex flex-col justify-evenly w-[25px] h-[25px] transform transition-all duration-300 origin-center overflow-hidden">
+								<div class="bg-gray-100 h-[2px] w-12 transform transition-all duration-300 origin-left group-focus:translate-y-6 delay-100"></div>
+								<div class="bg-gray-100 h-[2px] w-12 rounded transform transition-all duration-300 group-focus:translate-y-6 delay-75"></div>
+								<div class="bg-gray-100 h-[2px] w-12 transform transition-all duration-300 origin-left group-focus:translate-y-6"></div>
+				
+								<div class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
+									<div class="absolute bg-gray-100 h-[2px] w-7 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45 "></div>
+									<div class="absolute bg-gray-100 h-[2px] w-7 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45 "></div>
+								</div>
+							</div>
+						</div>
+					</button>
+				<div>
+			</div>
+
+			<div id="favContainer" class=" absolute  top-0 right-0  w-full md:w-[485px]  lg:w-[790px]  h-screen flex flex-col items-start justify-start   bg-gray-200  transition ease-in-out duration-300 translate-x-full">
+					<h2 class="fav-title relative mx-24 top-36 text-5xl font-bold">Ulubione:</h2>
+					<p class="relative top-64 mx-24">Twoja ulubiona lista jest pusta, może coś dodamy?😉</p>
+					<button id="btnXFav" class="absolute top-10 right-10 flex items-center justify-center  p-2 m-2 w-[30px] h-[35px] ">
+						<span class="mx-1 "><i class="fa-solid fa-xmark text-3xl" style="color: black;"></i></span>
+					</button>	 
+
+				</div>
+			</div>
+
+		</nav> 
+
+		<header class="relative max-w-[1400px] mx-auto  ">
+			
+		<div class="bg-[url('/dist/img/pexels-arthur-swiffen-14771034.jpg')] relative  top-24 w-full h-screen brightness-[.6]  bg-right bg-cover md:max-2xl:bg-center md:min-2xl:top-14 mx-1"></div>
+			
+		</header>
+
+	
+			
+
+		
+		<script src="./main.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
