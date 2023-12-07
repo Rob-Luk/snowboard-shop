@@ -1,41 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
+	
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>SNB.SHOP</title>
-		<link
-			href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Kdam+Thmor+Pro&family=Raleway:wght@300;400;600&display=swap"
-			rel="stylesheet"
-		/>
-		<script
-			src="https://kit.fontawesome.com/4ac635a877.js"
-			crossorigin="anonymous"
-		></script>
+		<link href="https://fonts.googleapis.com/css2?family=Anton&family=Fira+Code:wght@400;600&family=Kdam+Thmor+Pro&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+		<script src="https://kit.fontawesome.com/4ac635a877.js"crossorigin="anonymous"></script>
 		<link rel="stylesheet" href="./style.css" />
 	</head>
 
-	<body class=" relative h-[3000px]  font-sans">
+	<body class=" relative h-screen  font-sans overflow-x-hidden bg-slate-50">
 		
-		<nav class=" fixed top-0 left-0 h-auto flex justify-start items-center py-2 w-full border-b-2 border-gray-100 z-50">
+		<nav class=" fixed lg:relative top-0 left-0 h-auto flex justify-start items-center py-4 w-full border-b-2 border-gray-900 z-50 ">
 
 
-				<div class="logo mx-4 text-4xl flex items-center justify-start w-1/2 ">
-					<a href="#main"><span class="font-sans mx-2 text-gray-100">SNB.SHOP</span></a>
+				<div class=" mx-2 text-4xl flex justify-start md:justify-center w-1/2 ">
+					<a href="#main"><span class="font-['anton'] px-2 text-gray-900 font-thin transition-colors duration-150 hover:bg-gray-900 hover:text-gray-50">SNB.SHOP</span></a>
 				</div>
 				
 
 
-				<div class="nav-desktop flex items-center justify-center text-2xl">
-					<a href="#Mens" class="mx-5 hidden min-[846px]:flex text-gray-100 font-medium transition delay-150 duration-300 ease-in-out">Mężczyźni</a>
-					<a href="#Womens"class="mx-5 hidden min-[846px]:flex text-gray-100 font-medium transition delay-150 duration-300 ease-in-out">Kobiety</a>
-					<a href="#Blog"class="mx-5 hidden min-[846px]:flex text-gray-100 font-medium  transition delay-150 duration-300 ease-in-out">Blog</a>
+				<div class="nav-desktop flex items-center justify-center text-2xl z-10">
+					<a href="#Mens" class="mx-5 hidden md:flex text-gray-900 font-medium transition delay-150 duration-300 ease-in-out">Mężczyźni</a>
+					<a href="#Womens"class="mx-5 hidden md:flex text-gray-900 font-medium transition delay-150 duration-300 ease-in-out">Kobiety</a>
+					<a href="#Blog"class="mx-5 hidden md:flex text-gray-900 font-medium  transition delay-150 duration-300 ease-in-out">Blog</a>
 				</div>
 
 			
 			
 
-			<div class="nav-mobile absolute top-0 left-0 w-full -translate-y-full transition ease-in-out duration-300 delay-500  font-serif h-screen text-4xl backdrop-blur-sm flex flex-col justify-center items-center ">
+			<div class="nav-mobile absolute top-0 left-0 w-full -translate-y-full transition ease-in-out duration-300 delay-500  font-serif h-screen text-4xl flex flex-col justify-center items-center backdrop-blur-sm">
 				<a href="#Mens" class="nav-item py-2 my-4 transition ease-linear duration-300 hover:text-gray-100">Mężczyźni</a>
 				<a href="#Womens" class="nav-item py-2 my-4 transition ease-linear duration-300 hover:text-gray-100">Kobiety</a>
 				<a href="#Blog" class="nav-item py-2 my-4 transition ease-linear duration-300 hover:text-gray-100">Blog</a>
@@ -43,22 +38,22 @@
 				<a href="#Contact" class="nav-item py-2 my-4 transition ease-linear duration-300 hover:text-gray-100">Kontakt</a>
 			</div>
 
-			<div class="nav_icons w-1/2 flex items-center justify-end mx-4 min-[846px]:flex">
-				<i class="fa-solid fa-magnifying-glass text-xl mx-2 text-gray-100 hidden min-[846px]:flex"></i>
-				<div class="search-glass text-lg border-none"><input class=" text-center bg-transparent border-hidden hidden min-[906px]:w-44 min-[846px]:flex" type="search" name="search" id="text-search" placeholder="Szukaj" "></div>
-				<button id="favBtnHeart"><i class="fa-regular fa-heart mx-2 text-2xl" style="color: #f3eded"></i></button>		
-				<button class="cartBtn"><i class="fa-solid fa-cart-shopping text-gray-100 text-xl mx-2" ></i></button>
+			<div class="nav_icons w-1/2 flex items-center justify-end mx-4 md:flex">
+				<i class="fa-solid fa-magnifying-glass text-xl mx-2 text-gray-900 hidden md:flex"></i>
+				<div class="search-glass text-lg border-none"><input class=" text-center bg-transparent border-hidden hidden md:w-36 md:flex" type="search" name="search" id="text-search" placeholder="Szukaj" "></div>
+				<button id="favBtnHeart"><i class="fa-regular fa-heart mx-2 text-2xl" style="color: #0a0a0a"></i></button>		
+				<button class="cartBtn"><i class="fa-solid fa-cart-shopping text-gray-900 text-xl mx-2" ></i></button>
 				<div>
-					<button class="burgerBtn relative w-[40px] h-[40px]  min-[846px]:hidden group">
+					<button class="burgerBtn relative w-[40px] h-[40px]  md:hidden group">
 						<div class="relative w-[35px] h-[25px] bg-none outline:black flex overflow-hidden items-center justify-center transform transition-all ring-offset-gray-100 hover:ring-black ring-opacity-30 duration-200">
 							<div class="flex flex-col justify-evenly w-[25px] h-[25px] transform transition-all duration-300 origin-center overflow-hidden">
-								<div class="bg-gray-100 h-[2px] w-12 transform transition-all duration-300 origin-left group-focus:translate-y-6 delay-100"></div>
-								<div class="bg-gray-100 h-[2px] w-12 rounded transform transition-all duration-300 group-focus:translate-y-6 delay-75"></div>
-								<div class="bg-gray-100 h-[2px] w-12 transform transition-all duration-300 origin-left group-focus:translate-y-6"></div>
+								<div class="bg-gray-900 h-[2px] w-12 transform transition-all duration-300 origin-left group-focus:translate-y-6 delay-100"></div>
+								<div class="bg-gray-900 h-[2px] w-12 rounded transform transition-all duration-300 group-focus:translate-y-6 delay-75"></div>
+								<div class="bg-gray-900 h-[2px] w-12 transform transition-all duration-300 origin-left group-focus:translate-y-6"></div>
 				
 								<div class="absolute items-center justify-between transform transition-all duration-500 top-2.5 -translate-x-10 group-focus:translate-x-0 flex w-0 group-focus:w-12">
-									<div class="absolute bg-gray-100 h-[2px] w-7 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45 "></div>
-									<div class="absolute bg-gray-100 h-[2px] w-7 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45 "></div>
+									<div class="absolute bg-gray-900 h-[2px] w-7 transform transition-all duration-500 rotate-0 delay-300 group-focus:rotate-45 "></div>
+									<div class="absolute bg-gray-900 h-[2px] w-7 transform transition-all duration-500 -rotate-0 delay-300 group-focus:-rotate-45 "></div>
 								</div>
 							</div>
 						</div>
@@ -78,14 +73,31 @@
 
 		</nav> 
 
-		<header class="relative max-w-[1400px] mx-auto  ">
-			
-		<div class="bg-[url('/dist/img/pexels-arthur-swiffen-14771034.jpg')] relative  top-24 w-full h-screen brightness-[.6]  bg-right bg-cover md:max-2xl:bg-center md:min-2xl:top-14 mx-1"></div>
-			
+		<header class="h-screen relative">
+
+			<div class="relative h-screen w-full lg:grid lg:grid-cols-2">
+
+				<div class=" flex items-end">
+					<div class="relative h-screen  lg:h-[850px] w-full bg-[url('./img/mens-frontier-snowboard.jpg')]  bg-center bg-cover brightness-75 "></div>
+				</div>
+
+
+				<div class=" absolute top-1/2 h-auto  w-full  lg:relative lg:top-0 lg:flex">
+					<h1 class=" font-['anton'] flex justify-center  text-gray-900 lg:flex-col lg:mx-10 text-3xl sm:text-6xl lg:text-left lg:text-8xl 2xl:text-9xl  ">
+						<span class=" mx-2 lg:block mb-7">Let's ride</span>
+						<span class=" mx-2 lg:block mb-7">With us.</span>
+					</h1>
+				
+				</div>
+				 
+			</div>	
+
 		</header>
 
+		
 	
-			
+		
+
 
 		
 		<script src="./main.js"></script>
